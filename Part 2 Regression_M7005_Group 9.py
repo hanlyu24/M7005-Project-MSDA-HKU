@@ -5,7 +5,7 @@ import statsmodels.api as sm
 from sklearn.preprocessing import StandardScaler
 
 # read the combined Data
-data = pd.read_excel('C:/Users/86156/Desktop/Combined Data.xlsx')
+data = pd.read_excel("Combined Data.xlsx")
 
 # 1. Data Standardization
 # Standardizing the education, income, and occupation variables
