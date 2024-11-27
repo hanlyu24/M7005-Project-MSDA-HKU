@@ -25,7 +25,7 @@ data['SES_high_low'] = np.where(data['SES'] > median_ses, 1, 0)  # (1 for high S
 # 3. OLS regression analysis
 # Using SES as the independent variable, depression as the dependent variable, and other variables as control variables
 # Control variables are: gender, marriage, and religion
-X = data[['SES_high_low', 'Gender', 'Marriage', 'Religious Belief']]  # (Control variables)
+X = data[['SES_high_low', 'Gender', 'Marriage', 'Religious Belief','Rural','Health']]  # (Control variables)
 y = data['Depression']  #(Dependent variable: depression)
 
 
